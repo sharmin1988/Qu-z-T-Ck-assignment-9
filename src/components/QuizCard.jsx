@@ -22,7 +22,7 @@ export const QuizCard = ({ quiz }) => {
                 <Link to={`quiz/${id}`}>
                     <button
                         type='button'
-                        className='px-8 block w-full mt-4 py-3 font-semibold rounded-full bg-green-200 text-gray-800 hover:bg-green-400'>
+                        className='px-8 block w-full mt-4 py-3 font-semibold rounded-full text-white bg-purple-600 hover:bg-purple-700'>
                         Start QuiZ
                     </button>
                 </Link>
