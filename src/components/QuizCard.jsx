@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const QuizCard = ({ quiz }) => {
     const { name, logo, total, id } = quiz
@@ -18,12 +19,14 @@ export const QuizCard = ({ quiz }) => {
                         Total Quiz :{total}
                     </p>
                 </div>
-                <button
-                    type='button'
-                    className='px-8 block w-full mt-4 py-3 font-semibold rounded-full bg-green-200 text-gray-800 hover:bg-green-400'
-                >
-                    Start QuiZ
-                </button>
+                <Link to={`quiz/${id}`}>
+                    <button
+                        type='button'
+                        className='px-8 block w-full mt-4 py-3 font-semibold rounded-full bg-green-200 text-gray-800 hover:bg-green-400'>
+                        Start QuiZ
+                    </button>
+                </Link>
+
             </div>
         </div>
     );

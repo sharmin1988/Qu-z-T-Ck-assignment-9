@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import { useLoaderData } from 'react-router-dom';
 import { QuizzesContext } from './Main';
 import QuizCard from './QuizCard';
 
