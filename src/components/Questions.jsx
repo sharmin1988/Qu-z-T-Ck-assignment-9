@@ -5,7 +5,7 @@ import { EyeIcon } from '@heroicons/react/24/solid'
 
 
 const Questions = ({ quizQuestion, questions }) => {
-    const { question, options, id, correctAnswer } = quizQuestion
+    const { question, options, correctAnswer } = quizQuestion
 
     const handelAnswer = (option) => {
         if (option === correctAnswer) {

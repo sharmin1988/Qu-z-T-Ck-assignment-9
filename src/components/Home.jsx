@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { QuizzesContext } from './Main';
 import QuizCard from './QuizCard';
+import coverPic from '../images/13330330_Feb-Business_9.jpg'
 
 export const Home = () => {
     const quizzes = useContext(QuizzesContext)
@@ -14,9 +15,9 @@ export const Home = () => {
             <div className="flex flex-col max-w-screen-lg overflow-hidden bg-white border rounded shadow-sm lg:flex-row sm:mx-auto">
                 <div className="relative lg:w-1/2">
                     <img
-                        src="https://img.freepik.com/free-vector/thoughtful-woman-with-laptop-looking-big-question-mark_1150-39362.jpg?w=740&t=st=1665418271~exp=1665418871~hmac=f0e601f559d519054968fb0030b05e375ac028ad383275e84dd34cb55d617f0a"
+                        src= {coverPic}
                         alt=""
-                        className="object-cover w-full lg:absolute h-80 lg:h-full"
+                        className=" object-cover w-full lg:absolute h-80 lg:h-full"
                     />
                     <svg
                         className="absolute top-0 right-0 hidden h-full text-white lg:inline-block"
@@ -29,13 +30,10 @@ export const Home = () => {
                 <div className="flex flex-col justify-center p-8 bg-white lg:p-16 lg:pl-10 lg:w-1/2">
 
                     <h5 className="mb-3 text-3xl font-extrabold leading-none sm:text-4xl">
-                        Welcome To Qu!z TiCk
+                        Welcome To Qu!z T!Ck
                     </h5>
                     <p className="mb-5 text-gray-800">
-                        <span className="font-bold">Lorem ipsum</span> dolor sit amet,
-                        consectetur adipiscing elit. Etiam sem neque, molestie sit amet
-                        venenatis et, dignissim ut erat. Sed aliquet velit id dui eleifend,
-                        sed consequat odio sollicitudin.
+                        <span className="font-bold">Hello!!! lerner</span> Welcome to the world’s largest quiz community. Play a quiz to to share the joy of knowledge. There’s something for everyone !
                     </p>
                     <div className="flex items-center">
                         <button

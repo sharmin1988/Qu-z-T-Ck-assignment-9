@@ -16,7 +16,7 @@ export const Header = () => {
                 >
                     <img className='w-8' src={logo} alt="" />
                     <span className="ml-2 text-2xl font-bold tracking-wide text-gray-800 ">
-                        Qu!z TiCk
+                        Qu!z T!Ck
                     </span>
                 </Link>
                 <ul className="flex items-center hidden space-x-8 lg:flex">

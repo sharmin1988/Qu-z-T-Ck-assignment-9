@@ -7,7 +7,7 @@ export const QuizCard = ({ quiz }) => {
         <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-lg">
             <img
                 src={logo}
-                className=" bg-sky-100 p-6 object-cover w-full h-80"
+                className=" bg-pink-100 p-6 object-cover w-full h-80"
                 alt=""
             />
             <div className="p-5 border border-t-0">
@@ -16,7 +16,7 @@ export const QuizCard = ({ quiz }) => {
                         {name}
                     </p>
                     <p className="mb-2 font-semibold text-red-700">
-                        Total Quiz :{total}
+                        <small>Total Quiz :{total}</small>
                     </p>
                 </div>
                 <Link to={`quiz/${id}`}>
