@@ -1,5 +1,6 @@
 import React from 'react';
 import { ToastContainer, toast } from 'react-toastify';
+import { EyeIcon } from '@heroicons/react/24/solid'
 
 const Questions = ({ quizQuestion, questions }) => {
     const { question, options, id, correctAnswer } = quizQuestion
@@ -14,15 +15,14 @@ const Questions = ({ quizQuestion, questions }) => {
     }
     return (
         <div className=" bg-white flex flex-col lg:w-3/4 mx-auto justify-between p-5 border rounded shadow-sm">
-            <div className='lg:flex items-center'>
-                <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
-                    <h6 className="mb-2 font-semibold leading-5">Quiz : {questions.indexOf(quizQuestion) + 1}</h6>
-                </div>
-                <p className="mb-3 ml-10 text-sm">
-                    {question}
-                </p>
+            <div className='flex justify-between items-start'>
+            <div>
+                <h6 className="mb-2 font-semibold leading-5">Quiz : {questions.indexOf(quizQuestion) + 1}</h6>
+                <p className="mb-3 ml-10 text-lg">{question}</p>
             </div>
-            
+            <button className='justify-start'><EyeIcon className="h-6 w-6 text-green-700" /></button>
+            </div>
+
             {/* Quiz Options */}
             <div className="grid gap-4  sm:grid-cols-1 ">
                 {
