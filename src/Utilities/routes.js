@@ -8,8 +8,10 @@ import Main from "../components/Main";
 const router = createBrowserRouter([
     {
         path: '/',
-        errorElement: <ErrorPage></ErrorPage>,
         element: <Main></Main>,
+        errorElement: <ErrorPage></ErrorPage>,
+        loader: async () => {
+            return fetch('https://openapi.programming-hero.com/api/quiz')},
 
         children: [
             {
