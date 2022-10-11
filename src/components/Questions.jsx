@@ -2,25 +2,37 @@ import React from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import { EyeIcon } from '@heroicons/react/24/solid'
 
+
+
 const Questions = ({ quizQuestion, questions }) => {
     const { question, options, id, correctAnswer } = quizQuestion
 
     const handelAnswer = (option) => {
         if (option === correctAnswer) {
-            toast.success("Yea...Correct Answer !!!", { position: 'top-center', autoClose: 2500, });
+            toast.info("Yea...Correct Answer !!!", { position: 'top-center', autoClose: 2500, });
         }
         else {
             toast.error("Wrong Answer !!!", { position: 'top-center', autoClose: 2500, });
         }
     }
+
+    const handelEyeBtn = () => {
+        toast.success(`Correct answer: ${correctAnswer}`, { autoClose: 5000 })
+    }
+
+
+
+
     return (
         <div className=" bg-white flex flex-col lg:w-3/4 mx-auto justify-between p-5 border rounded shadow-sm">
             <div className='flex justify-between items-start'>
-            <div>
-                <h6 className="mb-2 font-semibold leading-5">Quiz : {questions.indexOf(quizQuestion) + 1}</h6>
-                <p className="mb-3 ml-10 text-lg">{question}</p>
-            </div>
-            <button className='justify-start'><EyeIcon className="h-6 w-6 text-green-700" /></button>
+                <div>
+                    <h6 className="mb-2 font-semibold leading-5">Quiz : {questions.indexOf(quizQuestion) + 1}</h6>
+                    <p className="mb-3 ml-10 text-lg">{question}</p>
+                </div>
+                <button onClick={() => handelEyeBtn(quizQuestion)} className='justify-start'>
+                    <EyeIcon className="h-6 w-6 text-green-700" />
+                </button>
             </div>
 
             {/* Quiz Options */}

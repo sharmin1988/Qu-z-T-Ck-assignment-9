@@ -5,7 +5,7 @@ import Questions from './Questions';
 export const QuizDetails = () => {
     const quizDetails = useLoaderData().data
     const {name, questions, total } = quizDetails
-    console.log(quizDetails)
+    console.log()
 
     return (
         <div className=" bg-lime-200 px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
@@ -47,7 +47,7 @@ export const QuizDetails = () => {
             <div className="grid gap-4  sm:grid-cols-1 ">
                 {
                     questions.map(question => <Questions
-                    key = {question.id}
+                    key={question.id}
                     quizQuestion = {question}
                     questions = {questions}
                     ></Questions>)
