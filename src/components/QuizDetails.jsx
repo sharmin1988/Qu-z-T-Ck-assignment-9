@@ -35,8 +35,7 @@ export const QuizDetails = () => {
                                 height="24"
                             />
                         </svg>
-                        <span className="relative">The</span>
-                    </span>{' '}
+                    </span>
                     Quizzes for {name}
                 </h2>
                 <p className="text-base text-gray-700 md:text-lg">
