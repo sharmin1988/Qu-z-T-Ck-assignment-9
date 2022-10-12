@@ -28,7 +28,7 @@ const Questions = ({ quizQuestion, questions }) => {
             <div className='flex justify-between items-start'>
                 <div>
                     <h6 className="mb-2 font-semibold leading-5">Quiz : {questions.indexOf(quizQuestion) + 1}</h6>
-                    <p className="mb-3 ml-10 text-lg">{question}</p>
+                    <p className="mb-3 ml-10 text-lg">{question.slice(3,-4)}</p>
                 </div>
                 <button onClick={() => handelEyeBtn(quizQuestion)} className='justify-start'>
                     <EyeIcon className="h-6 w-6 text-green-700" />
