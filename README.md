@@ -1,5 +1,8 @@
 # My project Name: Qu!z T!Ck 
 
+## Live site link: 
+[https://quiz-crackerz-sharmin1988.netlify.app/](https://quiz-crackerz-sharmin1988.netlify.app/)
+
 ### In my Project the highlighted points are ...
 
 1. First set up the work Condition with [tailwind](https://tailwindcss.com/), [React-router](https://reactrouter.com/en/main), [Rechart](https://recharts.org/en-US/), [HeroIcon](https://heroicons.com/).

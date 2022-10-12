@@ -27,7 +27,7 @@ export const Blog = () => {
             </div>
 
             {/* 2nd question */}
-            <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
+            <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
                 <div className="bg-pink-100 p-8 rounded shadow-xl sm:p-16">
 
                     <div className="flex flex-col lg:flex-row">
