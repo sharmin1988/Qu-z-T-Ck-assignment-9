@@ -1,5 +1,14 @@
+# My project Name: Qu!z T!Ck 
 
-# My project Name : Qu!z T!Ck 
+### In my Project the highlighted points are ...
+
+1. First set up the work Condition with [tailwind](https://tailwindcss.com/), [React-router](https://reactrouter.com/en/main), [Rechart](https://recharts.org/en-US/), [HeroIcon](https://heroicons.com/).
+
+2. Make a responsive Quiz website (include quiz card & details) with provided [API-resources](https://openapi.programming-hero.com/api/quiz).
+
+3. Make chart with total quiz number and answer Three questions in the Blog area.
+
+
 
 # Getting Started with Create React App
 
