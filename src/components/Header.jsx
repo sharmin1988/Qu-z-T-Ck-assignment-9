@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../images/brain.png'
 
 export const Header = () => {
@@ -21,34 +21,40 @@ export const Header = () => {
                 </Link>
                 <ul className="hidden flex-col items-center space-x-8 lg:flex lg:flex-row ">
                     <li>
-                        <Link
+                        <NavLink
                             to="/home"
                             aria-label="home"
                             title="home"
-                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            className={({ isActive }) =>
+                            isActive ? "font-medium tracking-wide text-pink-700 transition-colors duration-200 hover:text-purple-700": "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-700"
+                          }
                         >
                             Home
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
-                        <Link
+                        <NavLink
                             to="/charts"
                             aria-label="charts"
                             title="charts"
-                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            className={({ isActive }) =>
+                            isActive ? "font-medium tracking-wide text-pink-700 transition-colors duration-200 hover:text-purple-600": "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-600"
+                          }
                         >
                             Charts
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
-                        <Link
+                        <NavLink
                             to="/blog"
                             aria-label="blog"
                             title="blog"
-                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            className={({ isActive }) =>
+                            isActive ? "font-medium tracking-wide text-pink-700 transition-colors duration-200 hover:text-purple-600": "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-600"
+                          }
                         >
                             Blog
-                        </Link>
+                        </NavLink>
                     </li>
                 </ul>
                 <div className="lg:hidden">
@@ -75,7 +81,7 @@ export const Header = () => {
                     </button>
                     {isMenuOpen && (
                         <div className="absolute top-0 left-0 w-full">
-                            <div className="p-5 bg-pink-400 border rounded shadow-sm">
+                            <div className="p-5 bg-pink-100 border rounded shadow-sm">
                                 <div className="flex items-center justify-between mb-4">
                                     <div>
                                         <Link
@@ -107,7 +113,7 @@ export const Header = () => {
                                     </div>
                                 </div>
                                 <nav>
-                                    <ul className="space-y-4 bg-amber-200">
+                                    <ul className="space-y-4">
                                         <li>
                                             <Link
                                                 to="/home"
@@ -133,7 +139,7 @@ export const Header = () => {
                                                 to="/blog"
                                                 aria-label="blog"
                                                 title="blog"
-                                                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-600"
+                                                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-600"
                                             >
                                                Blog
                                             </Link>
